@@ -221,4 +221,5 @@ order by average_passes_pct desc;
 select gsts.`group` ,round(avg(ows.goals_per90 ),2)as average_goals_per90 from group_stage_team_stats gsts 
 join  overall_wc_stats ows on gsts.team = ows.team
 group by gsts.`group` 
+
 order by average_goals_per90;
